@@ -25,7 +25,9 @@ html{
 }
 .logo{
   height:100px;
-  padding:20px;
+  padding:20px ;
+
+
 }
 .info-logo{
   position: absolute;
@@ -33,13 +35,8 @@ html{
   margin-top: 8%;
   animation: wanish 3s 2s ease-in-out forwards; 
 }
-.navbar-links{
-  margin-top:0px;
-  padding: 0;
-}
+
 .navbar-links ul{
-  margin:0;
-  padding: 0;
   display: flex;
 }
 .navbar-links li{
@@ -107,11 +104,11 @@ html{
 .left{
   width:50%;
   margin:20px 10px;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-float:left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  float:left;
 }
 .text-box{
   display: flex;
@@ -273,6 +270,7 @@ input[type="button"]:hover{
 
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
   color: white;
+  opacity: 0.8;
 }
 .kontakt-left input,.kontakt-left textarea{
   text-align: left;
@@ -285,7 +283,7 @@ input[type="button"]:hover{
   position: relative;
   font-size: 1.5em;
   width: 50%;
-  height:500px;
+  height: 500px;
   padding-top:80px;
 float: left;
   text-align: center;
@@ -295,6 +293,7 @@ float: left;
 }
 .kontakt-right>p{
   padding: 20px;
+
 }
 .footer{
   position: relative;
@@ -356,17 +355,10 @@ float: left;
 
 }
 .toggle-button.active .bar3{visibility: hidden;}
-@keyframes rotate {
-  from{transform: rotate(0deg);}
-  to{transform: rotate(45deg);}
-}
-@keyframes rotates {
-  from{transform: rotate(0deg);}
-  to{transform: rotate(-45deg);}
-}
 
+.infoph,.info-logo{margin-top:100px;}
  .logo{
-padding:20px;
+  padding: 20px;
  }
  .break>img{
 width: 300px;
@@ -390,5 +382,17 @@ width: 300px;
 }
 .kontakt-left,.kontakt-right{
   width:100%;
+}
+.kontakt-left{
+  border-bottom: 1px solid #112835; 
+}
+/* ANIMACJA */
+@keyframes rotate {
+  from{transform: rotate(0deg);}
+  to{transform: rotate(45deg);}
+}
+@keyframes rotates {
+  from{transform: rotate(0deg);}
+  to{transform: rotate(-45deg);}
 }
 }
