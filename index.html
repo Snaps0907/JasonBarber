@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="zakładka.svg">
+  
+  <title>Jason Baber</title>
+</head>
+<body>
+  <div class="header">
+    
+    <img class="logo" src="img/logo.svg" alt="logo">
+    <div  class="toggle-button">
+      <span class="bar1"></span>
+      <span class="bar2"></span>
+      <span class="bar3"></span>
+    </div>
+    <div class="navbar-links">
+    <ul >
+   <li class="one"><a class="custom-underline" onclick="hide()" href="#info">O nas</a></li>
+   <li class="two"><a class="custom-underline" onclick="hide()" href="#menu">Menu</a></li>
+   <li class="three"><a class="custom-underline" onclick="hide()" href="#zaloga">Załoga</a></li>
+   <li class="four"><a class="custom-underline" onclick="hide()" href="#kontakt">Kontakt</a></li>
+    </ul>
+  </div>
+  </div>
+  <div class="info">
+    <img class="info-logo" src="img/logo.svg" alt="logo">
+    <img class="infoph" src="img/info_photo.jpg" alt="info">
+   <div class="break"><img src="img/moustage.svg" alt="moustage"></div> 
+    <div id="info" class="text-box">
+      <div class="left">
+    <img  class="vintage" src="img/vintage.svg" alt="vintage">
+  <p class="text"> <span>Jason Barber</span> <br> Nasz salon powstał w 2010 roku. Od samego początku stawialiśmy na pełen profesjonalizm i majwyżeszj jakosci porodukty. Do dnia dzisiejszego zaufało nam wiele osób, które zostały naszymi stałymi klienami. Z przyjemnością radzimy sobie z najtrudniejszymi wyzwaniami. Przyjdź i sprawdź, a na pewno się nie zawiedzisz, naszych gości traktujemy po królewsku, a nasi barberzy zawsze są gotowi wysłuchać i doradzić.</p>
+</div>
+  <img class="table" src="img/table.jpg" alt="table">
+</div>
+
+  </div>
+  <div class="break"><img src="img/moustage.svg" alt="moustage"></div>
+  <div id="menu">
+  <p>Nasza oferta</p>
+  <div class="menu">
+    
+    <div class="menu-box"><img src="img/hair.svg" alt="hair">
+      <p class="menu-title">Włosy</p>
+    <p>strzyżenie maszynką..........30zł</p>
+    <p>strzyżenie nożyczkami.......50zł</p>
+    <p>koloryzacja włosów............130zł</p>
+    <p>modelowanie włosów..........40zł</p>
+    <p>odnowa włosów....................70zł</p>
+  </div>
+    <div class="menu-box"><img src="img/beard.svg" alt="beard">
+      <p class="menu-title">Broda</p>
+      <p>strzyżenie maszynką..........20zł</p>
+    <p>strzyżenie nożyczkami.......50zł</p>
+    <p>koloryzacja brody.................70zł</p>
+    <p>modelowanie brody............30zł</p>
+    <p>odnowa brody......................70zł</p>
+    </div>
+    <div class="menu-box"><img src="img/combo.svg" alt="combo">
+      <p class="menu-title">Combo</p>
+      <p>strzyżenie maszynką..........40zł</p>
+    <p>strzyżenie nożyczkami.......60zł</p>
+    <p>koloryzacja ..........................170zł</p>
+    <p>modelowanie ......................120zł</p>
+    <p>odnowa ................................100zł</p>
+    </div>
+  </div>
+</div> 
+  <div class="break"><img src="img/moustage.svg" alt="moustage"></div> 
+  <div id="zaloga">
+    <p>Załoga salonu</p>
+    <div class="zaloga">
+      <div class="zaloga-box"><div class="zaloga-info">ASIA</div><img src="img/asia.jpg" alt="asia"></div>
+      <div class="zaloga-box"><div class="zaloga-info">TOMEK</div><img src="img/henry.jpg" alt="tomek"></div>
+        <div class="zaloga-box"><div class="zaloga-info">JIMMY</div><img src="img/jimmy.jpeg" alt="jimmy"></div>
+          <div class="zaloga-box"><div class="zaloga-info">JOHN</div><img src="img/john.jpeg" alt="john"></div>
+            <div class="zaloga-box"><div class="zaloga-info">DOMINIKA <br> </div><img src="img/dominika.jpg" alt="dominika"></div>
+    </div>
+  </div>
+  <div class="break"><img src="img/moustage.svg" alt="moustage"></div> 
+  <div id="kontakt">
+    <p>Skontatkuj się z nami</p>
+    <div class="kontakt-left">
+      <form id="form" action="#" method="post">
+      <input placeholder="Imię" type="text">
+     <input  id="email" placeholder="Email" type="email" onkeydown="validation()">
+     <div id="text"></div>
+      <textarea placeholder="Wiadomość" name="" id="" cols="30" rows="7"></textarea>
+      <input type="button" value="Wyślij" onclick="alert('Twoja wiadomość została wysłana')">
+    </form>
+  </div>
+    <div class="kontakt-right">
+      <p class="telefon">Telefon<br>  540-325-234</p>
+      <p class="facebook">Facebook<br> Jason Barber</p>
+      <p class="adres">Adres<br> ul.Krzeszowicka 45 <br> 30-540 Kraków</p>
+    </div>
+    <div class="footer">Web desing by Jakub Laszczyk</div>
+  </div>
+  <script  type="text/javascript" src="script.js"></script>
+</body>
+</html>
