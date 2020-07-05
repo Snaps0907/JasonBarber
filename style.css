@@ -1,0 +1,395 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+  text-align: center;
+}
+html{
+  scroll-behavior: smooth; 
+}
+
+/* HEADER */
+
+.header{
+  background-color: #133040;
+  position:fixed;
+  top:0;
+  left: 0;
+  width:100%;
+  display:flex;
+  align-items: center;
+  z-index: 1000;
+  justify-content: space-between;
+  border-bottom: 1px solid #112835;
+}
+.logo{
+  height:100px;
+  padding-top:20px ;
+  padding-bottom:20px ;
+}
+.info-logo{
+  position: absolute;
+  width:80%;
+  margin-top: 8%;
+  animation: wanish 3s 2s ease-in-out forwards; 
+}
+.navbar-links{
+  margin-top:0px;
+  padding: 0;
+}
+.navbar-links ul{
+  margin:0;
+  padding: 0;
+  display: flex;
+}
+.navbar-links li{
+  list-style: none;
+  display:inline;
+}
+.navbar-links li a{
+  text-decoration: none;
+  color:#ffffff;
+  font-size: 1.5em;
+  font-weight: bold;
+  display: block;
+  padding: 2.25rem;
+}
+.navbar-links li:hover{
+  background-color: #112835;
+}
+.toggle-button{
+  position:absolute;
+  top: 2rem;
+  right:2rem;
+  display:none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50px;
+  height:31px;
+  cursor: pointer;
+}
+.toggle-button .bar1,.bar2,.bar3{
+  position: relative;
+  height: 5px;
+  width: 100%;
+  background-color: white;
+  border-radius:4px;
+}
+
+/* SEPARATOR */
+
+.break{
+  text-align: center;
+  width:100%;
+}
+.break>img{
+  padding: 30px;
+  width:300px;
+}
+
+/* INFORMACJE */
+
+.vintage{
+  height: 150px;
+  position:relative;
+  float:left;
+}
+.infoph{
+  width:100%;
+}
+
+.info{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.left{
+  width:50%;
+  margin:20px 10px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+float:left;
+}
+.text-box{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.text{
+margin:10px;
+  text-align: center;
+  width:50%;
+}
+.text>span{
+  margin-top:10px;
+  font-weight: bold;
+  font-size: 2em;
+}
+.table{
+  width:40%;
+  height: auto;
+display:flex; 
+float:left;
+box-shadow: 3px 0px 10px black;
+
+}
+
+/* MENU */
+
+#menu>p{
+  font-size: 2em;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+.menu{
+  width: 100%;
+  text-align: center;
+  background-image: url('back2.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.menu-box{
+  display: inline-block;
+  margin: 20px 50px;
+  width:300px;
+  border-radius: 10px;
+  background-color: white;
+  border:3px solid #133040;
+
+}
+.menu-box>img{
+  width:100px;
+  padding: 20px 0;
+}
+.menu-box>p{
+  padding: 10px 0;
+}
+.menu-title{
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+/* ZAŁOGA */
+
+.zaloga{
+  text-align: center;
+}
+#zaloga>p{
+  font-size: 2em;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+.zaloga-box{
+  display: inline-block;
+  width:300px;
+  margin: 0 20px;
+  position: relative;
+}
+.zaloga-box:hover .zaloga-info{
+  display: inline;
+}
+.zaloga-info{
+  width: 100%;
+  height:80px;
+  position: absolute;
+  bottom: 0;
+  z-index:2;
+  color: #ffffff;
+  background-color: black;
+  display: none;
+  padding: 20px 0px;
+  font-size: 2em;
+}
+.zaloga-box>img{
+  width:300px;
+  z-index: 1;
+}
+
+/* KONTAKT */
+#kontakt{
+  background-color: #133040;
+}
+#kontakt>p{
+  color:white;
+  font-size: 2em;
+  font-weight: bold;
+  padding: 20px;
+}
+.kontakt-left{
+  position: relative;
+
+  float: left;
+  background-color: #133040;
+  width: 50%;
+margin: 0;
+  text-align: center;
+  color:white;
+  border-right: 2px solid #112835;
+ }
+input[type="text"],input[type="email"]{
+  background-color: #133040;
+  color: white;
+  font-size: 1.2em;
+  padding: 10px;
+  margin: 20px auto;
+  width:300px;
+  border:none;
+  border-bottom: 1px solid white;
+}
+input[type="text"]:focus,input[type="email"]:focus,textarea:focus{
+  background-color: #112835;
+}
+textarea{
+  background-color: #133040;
+  border: 1px solid white;
+  color: white;
+  font-size: 1.2em;
+  padding: 10px;
+  margin: 20px auto;
+  width:300px;
+  resize:none;
+}
+input[type="button"]{
+  display: block;
+  font-size: 1.2em;
+  margin: 10px auto;
+  background-color: #133040;
+  color: white;
+  padding: 5px;
+  border:none;
+  border-bottom: 1px solid white;
+}
+input[type="button"]:hover{
+  cursor:pointer;
+  background-color: #112835;
+}
+::-webkit-input-placeholder { /* Edge */
+  color: white;
+  opacity: 0.8;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: white;
+}
+.kontakt-left input,.kontakt-left textarea{
+  text-align: left;
+}
+.kontakt-left>form{
+  display: flex;
+  flex-direction: column;
+}
+.kontakt-right{
+  position: relative;
+  font-size: 1.5em;
+  width: 50%;
+  padding: 64.5px 0;
+float: left;
+  text-align: center;
+  color:white;
+  background-color: #133040;
+  
+}
+.kontakt-right>p{
+  padding: 20px;
+
+}
+.footer{
+  position: relative;
+  float: left;
+  width:100%;
+  padding: 20px 0;
+  background-color: #133040;
+  border-top:1px solid #112835;
+  color:white;
+}
+/* ANIMACJA */
+
+@keyframes wanish{
+  from{
+    opacity: 1;
+  }to{
+    opacity: 0;
+  }
+}
+
+/* MOBILNE WYŚWIETLANIE */
+
+@media (max-width:750px){
+.toggle-button{
+  display: flex;
+  
+  }
+ .navbar-links{
+   width:100%;
+     display:none ; 
+ } 
+
+ .header{
+   flex-direction: column;
+   align-items: flex-start;
+ }
+ .navbar-links ul{
+
+   width:100%;
+   flex-direction: column;
+ }
+ .navbar-links li{
+   text-align: center;
+ }
+ .navbar-links.active{
+  background-color: #133040;
+  position: absolute;
+  margin-top: 101px;
+   display: flex;
+
+ }
+ .toggle-button.active .bar1{
+   animation: rotate 0.5s ease-in-out forwards ;
+ top:48%;
+ }
+ .toggle-button.active .bar2{
+  animation: rotates 0.5s ease-in-out forwards ;
+  top:8%
+
+}
+.toggle-button.active .bar3{visibility: hidden;}
+@keyframes rotate {
+  from{transform: rotate(0deg);}
+  to{transform: rotate(45deg);}
+}
+@keyframes rotates {
+  from{transform: rotate(0deg);}
+  to{transform: rotate(-45deg);}
+}
+
+ .logo{
+  margin-left: 30px;
+ }
+ .break>img{
+width: 300px;
+ }
+.vintage{
+  height:300px;
+}
+  .text-box{
+    flex-direction: column;
+  }
+.left{
+  flex-direction:row;
+  width:100%;
+}
+.table{
+  width:90%;
+}
+
+.menu-box,.zaloga-box{
+  margin-top: 20px;
+}
+.kontakt-left,.kontakt-right{
+  width:100%;
+}
+}
