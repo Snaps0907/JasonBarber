@@ -25,8 +25,7 @@ html{
 }
 .logo{
   height:100px;
-  padding-top:20px ;
-  padding-bottom:20px ;
+  padding:20px;
 }
 .info-logo{
   position: absolute;
@@ -148,7 +147,7 @@ box-shadow: 3px 0px 10px black;
 .menu{
   width: 100%;
   text-align: center;
-  background-image: url('back2.png');
+  background-image: url('img/back2.png');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -285,9 +284,9 @@ input[type="button"]:hover{
 .kontakt-right{
   position: relative;
   font-size: 1.5em;
-  margin:auto;
   width: 50%;
   height:500px;
+  padding-top:80px;
 float: left;
   text-align: center;
   color:white;
@@ -296,7 +295,6 @@ float: left;
 }
 .kontakt-right>p{
   padding: 20px;
-
 }
 .footer{
   position: relative;
@@ -368,7 +366,7 @@ float: left;
 }
 
  .logo{
-  margin-left: 30px;
+padding:20px;
  }
  .break>img{
 width: 300px;
