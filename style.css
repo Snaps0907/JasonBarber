@@ -221,7 +221,7 @@ box-shadow: 3px 0px 10px black;
 }
 .kontakt-left{
   position: relative;
-
+  height:500px;
   float: left;
   background-color: #133040;
   width: 50%;
@@ -285,8 +285,9 @@ input[type="button"]:hover{
 .kontakt-right{
   position: relative;
   font-size: 1.5em;
+  margin:auto;
   width: 50%;
-  padding: 64.5px 0;
+  height:500px;
 float: left;
   text-align: center;
   color:white;
