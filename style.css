@@ -26,16 +26,7 @@ html{
 .logo{
   height:100px;
   padding:20px ;
-
-
 }
-.info-logo{
-  position: absolute;
-  width:80%;
-  margin-top: 8%;
-  animation: wanish 3s 2s ease-in-out forwards; 
-}
-
 .navbar-links ul{
   display: flex;
 }
@@ -303,15 +294,6 @@ float: left;
   background-color: #133040;
   border-top:1px solid #112835;
   color:white;
-}
-/* ANIMACJA */
-
-@keyframes wanish{
-  from{
-    opacity: 1;
-  }to{
-    opacity: 0;
-  }
 }
 
 /* MOBILNE WYŚWIETLANIE */
